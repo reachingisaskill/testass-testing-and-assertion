@@ -1,0 +1,4 @@
+.temp/
+bin/
+lib/
+test_report.txt

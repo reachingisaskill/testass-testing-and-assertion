@@ -31,7 +31,6 @@
 #
 ############################################################################################
 
-HEAD = /home/chris/play/code
 
 # File Locations
 INC_DIR = include
@@ -48,8 +47,8 @@ LIB_NAME = testass
 
 
 # Includes and Libraries
-INC_FLAGS += -I${INC_DIR} -I${HEAD}/include
-LIB_FLAGS += -L${HEAD}/lib
+INC_FLAGS += -I${INC_DIR}
+LIB_FLAGS +=
 
 
 # Compile-Time Definitions
@@ -57,7 +56,7 @@ DEFINES =
 
 
 # Installation Directory
-INSTALL_DIR = ${HEAD}
+INSTALL_DIR =
 
 
 # The Compiler
