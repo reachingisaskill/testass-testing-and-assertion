@@ -2,9 +2,6 @@
 #ifndef __TESTASS_H__
 #define __TESTASS_H__
 
-
-#include "stdexts.h"
-
 #include "testass_definitions.h"
 
 #include "testass_assert.h"

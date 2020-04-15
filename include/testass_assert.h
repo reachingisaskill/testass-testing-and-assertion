@@ -4,6 +4,7 @@
 
 
 #include <string>
+#include <sstream>
 #include <cmath>
 
 #include "testass_control.h"

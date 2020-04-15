@@ -1,6 +1,7 @@
 
 #include "testass_control.h"
 
+#include <sstream>
 #include <cstdlib>
 
 namespace testass

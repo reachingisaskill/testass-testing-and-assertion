@@ -3,7 +3,7 @@
 #define __TESTASS__CONTROL_H__
 
 
-#include "stdexts.h"
+#include "testass_singleton.h"
 
 #include <iostream>
 #include <list>
@@ -13,9 +13,9 @@
 namespace testass
 {
 
-  class control : protected stdexts::singleton< control >
+  class control : protected singleton< control >
   {
-    friend class stdexts::singleton< control >;
+    friend class singleton< control >;
 
     struct eventT 
     {
