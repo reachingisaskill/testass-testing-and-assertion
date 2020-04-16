@@ -14,22 +14,22 @@ namespace testass
 {
 
   template < typename T1 >
-  void assert( T1, std::string );
+  void testass_assert( T1, std::string );
 
   template < typename T1, typename T2 >
-  void assert_equal( T1, T2, std::string, std::string );
+  void testass_assert_equal( T1, T2, std::string, std::string );
 
   template < typename T1, typename T2 >
-  void assert_approx_equal( T1, T2, std::string, std::string, double = TESTASS_APPROX_LIMIT );
+  void testass_assert_approx_equal( T1, T2, std::string, std::string, double = TESTASS_APPROX_LIMIT );
 
   template < typename T1, typename T2 >
-  void assert_not_equal( T1, T2, std::string, std::string );
+  void testass_assert_not_equal( T1, T2, std::string, std::string );
 
   template < typename T1 >
-  void assert_true( T1, std::string );
+  void testass_assert_true( T1, std::string );
 
   template < typename T1 >
-  void assert_false( T1, std::string );
+  void testass_assert_false( T1, std::string );
 
 
 ////////////////////////////////////////////////////////////////////////////////
@@ -38,7 +38,7 @@ namespace testass
 
   
   template < typename T1 >
-  void assert( T1 a, std::string aName )
+  void testass_assert( T1 a, std::string aName )
   {
     std::stringstream ss( "" );
     ss << a;
@@ -46,7 +46,7 @@ namespace testass
   }
 
   template < typename T1, typename T2 >
-  void assert_equal( T1 a, T2 b, std::string aName, std::string bName )
+  void testass_assert_equal( T1 a, T2 b, std::string aName, std::string bName )
   {
     std::stringstream ss( "" );
     ss << a << " == " << b;
@@ -54,7 +54,7 @@ namespace testass
   }
 
   template < typename T1, typename T2 >
-  void assert_approx_equal( T1 a, T2 b, std::string aName, std::string bName, double limit )
+  void testass_assert_approx_equal( T1 a, T2 b, std::string aName, std::string bName, double limit )
   {
     std::stringstream ss( "" );
     ss << a << " approx " << b;
@@ -62,7 +62,7 @@ namespace testass
   }
 
   template < typename T1, typename T2 >
-  void assert_not_equal( T1 a, T2 b, std::string aName, std::string bName )
+  void testass_assert_not_equal( T1 a, T2 b, std::string aName, std::string bName )
   {
     std::stringstream ss( "" );
     ss << a << " != " << b;
@@ -70,7 +70,7 @@ namespace testass
   }
 
   template < typename T1 >
-  void assert_true( T1 a, std::string aName )
+  void testass_assert_true( T1 a, std::string aName )
   {
     std::stringstream ss( "" );
     ss << a;
@@ -78,7 +78,7 @@ namespace testass
   }
 
   template < typename T1 >
-  void assert_false( T1 a, std::string aName )
+  void testass_assert_false( T1 a, std::string aName )
   {
     std::stringstream ss( "" );
     ss << a;
@@ -86,7 +86,7 @@ namespace testass
   }
 
   template < typename T1, typename T2 >
-  void assert_greaterthan( T1 a, T2 b, std::string aName, std::string bName )
+  void testass_assert_greaterthan( T1 a, T2 b, std::string aName, std::string bName )
   {
     std::stringstream ss( "" );
     ss << a << " > " << b;
@@ -94,7 +94,7 @@ namespace testass
   }
 
   template < typename T1, typename T2 >
-  void assert_lessthan( T1 a, T2 b, std::string aName, std::string bName )
+  void testass_assert_lessthan( T1 a, T2 b, std::string aName, std::string bName )
   {
     std::stringstream ss( "" );
     ss << a << " < " << b;
@@ -102,7 +102,7 @@ namespace testass
   }
 
   template < typename T1 >
-  void assert_positive( T1 a, std::string aName )
+  void testass_assert_positive( T1 a, std::string aName )
   {
     std::stringstream ss( "" );
     ss << a;
@@ -110,7 +110,7 @@ namespace testass
   }
 
   template < typename T1 >
-  void assert_negative( T1 a, std::string aName )
+  void testass_assert_negative( T1 a, std::string aName )
   {
     std::stringstream ss( "" );
     ss << a;
