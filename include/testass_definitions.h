@@ -32,6 +32,9 @@
 
 #define ASSERT_NEGATIVE( term ) testass::testass_assert_negative( term, #term )
 
+#define ASSERT_NULL( term ) testass::testass_assert_null( term, true, #term )
+
+#define ASSERT_NOT_NULL( term ) testass::testass_assert_null( term, false, #term )
 
 ////////////////////////////////////////////////////////////////////////////////
  // Organisation

@@ -55,6 +55,15 @@ int main( int, char** )
   ASSERT_NOT_EQUAL( 1, 4 );
   ASSERT_APPROX_EQUAL( 43.456, 43.456 );
 
+  SECTION( "Assertion Tests 5" );
+  int* test_p = nullptr;
+  ASSERT_NULL( test_p );
+  ASSERT_NOT_NULL( test_p );
+  test_p = new int( 10 );
+  ASSERT_NULL( test_p );
+  ASSERT_NOT_NULL( test_p );
+  delete test_p;
+
   if ( ! testass::control::summarize() )
   {
     std::cout << "Failures Found. Printing Report:\n\n";

@@ -31,6 +31,9 @@ namespace testass
   template < typename T1 >
   void testass_assert_false( T1, std::string );
 
+  template < typename T1 >
+  void testass_assert_null( T1*, bool, std::string );
+
 
 ////////////////////////////////////////////////////////////////////////////////
 // Defintions
@@ -115,6 +118,17 @@ namespace testass
     std::stringstream ss( "" );
     ss << a;
     testass::control::assertion( ( (int)a ) < 0, ( aName + " is negative" ), ss.str() );
+  }
+
+  template < typename T1 >
+  void testass_assert_null( T1* a, bool result, std::string aName )
+  {
+    std::stringstream ss( "" );
+    ss << a;
+    if ( result )
+      testass::control::assertion( (a == nullptr) == result, ( aName + " is null" ), ss.str() );
+    else
+      testass::control::assertion( (a == nullptr) == result, ( aName + " is not null" ), ss.str() );
   }
 }
 
