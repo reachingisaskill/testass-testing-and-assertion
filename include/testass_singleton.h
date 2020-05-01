@@ -1,6 +1,6 @@
 
-#ifndef __TESTASS__SINGLETON_H__
-#define __TESTASS__SINGLETON_H__
+#ifndef TESTASS_SINGLETON_H_
+#define TESTASS_SINGLETON_H_
 
 
 namespace testass
@@ -35,4 +35,4 @@ namespace testass
 
 }
 
-#endif // __TESTASS__SINGLETON_H__
+#endif // TESTASS_SINGLETON_H_

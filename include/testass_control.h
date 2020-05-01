@@ -1,6 +1,6 @@
 
-#ifndef __TESTASS__CONTROL_H__
-#define __TESTASS__CONTROL_H__
+#ifndef TESTASS_CONTROL_H_
+#define TESTASS_CONTROL_H_
 
 
 #include "testass_singleton.h"
@@ -84,5 +84,5 @@ namespace testass
 
 }
 
-#endif // __TESTASS__CONTROL_H__
+#endif // TESTASS_CONTROL_H_
 

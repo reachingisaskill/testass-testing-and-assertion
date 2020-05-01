@@ -1,6 +1,6 @@
 
-#ifndef __TESTASS__DEFINITIONS_H__
-#define __TESTASS__DEFINITIONS_H__
+#ifndef TESTASS_DEFINITIONS_H_
+#define TESTASS_DEFINITIONS_H_
 
 
 #ifndef TESTASS_APPROX_LIMIT
@@ -43,5 +43,5 @@
 #define SECTION( name ) testass::control::start_section( name )
 
 
-#endif // __TESTASS__DEFINITIONS_H__
+#endif // TESTASS_DEFINITIONS_H_
 

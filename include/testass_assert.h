@@ -1,6 +1,6 @@
 
-#ifndef __TESTASS__ASSERT_H__
-#define __TESTASS__ASSERT_H__
+#ifndef TESTASS_ASSERT_H_
+#define TESTASS_ASSERT_H_
 
 
 #include <string>
@@ -132,5 +132,5 @@ namespace testass
   }
 }
 
-#endif // __TESTASS__ASSERT_H__
+#endif // TESTASS_ASSERT_H_
 
